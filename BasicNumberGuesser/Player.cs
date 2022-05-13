@@ -80,16 +80,18 @@ namespace BasicNumberGuesser
                         break;
                     default:
                         Console.Clear();
-                        Console.WriteLine("Bad input, choose difficulty again.");
-                        SetDifficulty();
+                        Console.WriteLine("Bad input, easy difficulty selected automatically.");
+                        chances_left = 4;
+                        //SetDifficulty();
                         break;
                 }
             }
             else
             {
                 Console.Clear();
-                Console.WriteLine("Bad input, please enter a number instead.");
-                SetDifficulty();
+                Console.WriteLine("Bad input, easy difficulty selected automatically.");
+                chances_left = 4;
+                //SetDifficulty();
             }
         }
     }
