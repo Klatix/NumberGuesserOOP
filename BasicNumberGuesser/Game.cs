@@ -33,6 +33,7 @@ namespace BasicNumberGuesser
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Bad input, please type a number");
                     Console.ResetColor();
+                    player.LoseChance();
                 }
                 if (player.GetChances() < 1)
                 {
